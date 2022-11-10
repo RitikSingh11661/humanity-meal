@@ -12,7 +12,7 @@ export default function Hompage() {
                     <img width={'70%'} height={'406px'} src="https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg" alt="daal" />
                     <img width={'30%'} height={'406px'} src="https://www.kindmeal.my/photos/shop/5/570-4268-m.jpg" alt="food" />
                 </div>
-                <div style={{ width: '81vw', margin: 'auto', background: 'white', display: 'flex', justifyContent: 'space-evenly', background: 'white', height: '25vh', alignItems: 'center', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
+                <div style={{ width: '81vw', margin: 'auto', background: 'white', display: 'flex', justifyContent: 'space-evenly',height: '25vh', alignItems: 'center', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/687-4507-m.jpg" alt="food" />
                     <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg" alt="food" />
                     <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg" alt="food" />
@@ -24,7 +24,7 @@ export default function Hompage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center',boxSizing:'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{color:'#666666'}}>Latest News & Videos</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '21px',width:'60%' }}>
                             <p>Save Lives with Your Blog</p>
                             <p>News & Articles</p>
                             <p>Follow Our Facebook</p>
@@ -56,7 +56,7 @@ export default function Hompage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center',boxSizing:'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{color:'#666666'}}>Yummylicious Moments</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '21px',width:'60%' }}>
                             <p>Secret Recipes</p>
                             <p>Member Hot Picks</p>
                             <p>Photo Moments</p>
@@ -88,7 +88,7 @@ export default function Hompage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center',boxSizing:'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{color:'#666666'}}>Discover Restaurants</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '21px',width:'60%' }}>
                             <p>Vegetarian Directory</p>
                             <p>Restaurant Menu</p>
                             <p>Food Map</p>
@@ -120,7 +120,7 @@ export default function Hompage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center',boxSizing:'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{color:'#666666'}}>Amazing Superheroes</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '21px',width:'60%' }}>
                             <p>Latest Buzz</p>
                             <p>Lifestyle</p>
                             <p>Animals Heros</p>
@@ -180,10 +180,17 @@ export default function Hompage() {
                         <p>Make new, compassionate friends and share great food tips</p>
                     </div>
                   </div>
-                  <p style={{fontSize:'21px',color:'#666666',width:'75vw',margin:'15vh auto auto auto'}}>Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free. Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</p>
-                  <div style={{width:'35vw',height:'40vh',margin:'10vh auto auto auto',background:'red',color:'white',borderRadius:'5%'}}>
-                     <p style={{fontSize:'35px',fontWeight:'bold',marginBottom:'-5vh'}}>Join HumanityMeal Now</p>
+                  <p style={{fontSize:'21px',color:'#666666',width:'75vw',margin:'15vh auto'}}>Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free. Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</p>
+                  <div style={{width:'35vw',height:'18vh',margin:'10vh auto',background:'red',color:'white',borderRadius:'5%'}}>
+                     <p style={{fontSize:'35px',fontWeight:'bold'}}>Join HumanityMeal Now</p>
                      <p style={{fontSize:'17px',fontWeight:'bold'}}>Your tasty journey begins here</p>
+                  </div>
+                  <div>
+                    <h3 style={{color:'grey',fontSize:'27px'}}>Featured On</h3>
+                    <img style={{width:'81vw'}} src="https://www.kindmeal.my/images/media-feature2.png" alt="" />
+                  </div>
+                  <div style={{background:'#f3f3f3',marginTop:'15vh'}}>
+                    <img style={{width:'81vw'}} src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="last"/>
                   </div>
                </div>
             </div>
