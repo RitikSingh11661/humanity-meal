@@ -1,4 +1,4 @@
-import { ArrowRight, Facebook, Twitter, Link45deg, } from 'react-bootstrap-icons';
+import {Facebook, Twitter, Link45deg} from 'react-bootstrap-icons';
 export default function Navbar() {
     const icon_styles = {
         width: "5vw",
@@ -7,14 +7,14 @@ export default function Navbar() {
     }
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: "space-around", alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: "space-evenly", alignItems: 'center' }}>
                 <div>
                     <img style={{width:"30vw"}} src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-09/navbar_logo_582569.png" alt="nav_logo" />
                 </div>
                 <div>
-                    <Link45deg style={icon_styles} />
-                    <Facebook style={icon_styles} />
-                    <Twitter style={icon_styles} />
+                   <a href="https://www.kindmeal.my/widget.htm"><Link45deg style={icon_styles} /></a> 
+                   <a href="https://www.facebook.com/KindMeal.my"><Facebook  style={icon_styles} /></a> 
+                   <a href="https://twitter.com/KindMeal"><Twitter style={icon_styles} /></a> 
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: "space-around", width: "25vw" }}>
                     <p>Login</p>
@@ -23,7 +23,7 @@ export default function Navbar() {
                     <p style={{ borderLeft: "1px solid", paddingLeft: "0.3vw" }}>Sign Up</p>
                 </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: "space-around", alignItems: 'center', background: "#2bb673",color:'#ffffff',fontSize:'20px',padding:'0 3vw',height:'8vh'}}>
+            <div style={{ display: 'flex', justifyContent: "space-evenly", alignItems: 'center', background: "#2bb673",color:'#ffffff',fontSize:'20px',padding:'0 3vw',height:'8vh'}}>
                 <p>Home</p>
                 <p>Meal Deals</p>
                 <p>KindMoments</p>
