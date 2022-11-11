@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div style={{ background: "#2bb673", marginTop: '5vh', paddingTop: '3vh' }}>
+        <div style={{ background: "#2bb673",paddingTop: '3vh' }}>
             <table style={{ color: 'white', marginBottom: '10vh', margin: 'auto' }}>
                 <thead>
                 <tr style={{ color: '#ffffff', fontSize: '18px' }}>
