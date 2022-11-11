@@ -1,4 +1,4 @@
-export default function Hompage() {
+export default function HomePage() {
     // https://www.kindmeal.my/images/deal-feature-vignette.png
     // https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg , https://www.kindmeal.my/photos/shop/5/593-4434-m.jpg
 
@@ -151,7 +151,7 @@ export default function Hompage() {
                 </div>
             </div>
             <div>
-                <div>
+                <div style={{textAlign:'center'}}>
                     <p style={{ fontSize: '30px', color: '#666666' }}>Introducing India's Pioneering Meat-Free Lifestyle Platform</p>
                     <div style={{ display: 'flex', width: '35vw', margin: 'auto', justifyContent: 'space-between', alignItems: 'center' }}>
                         <p style={{ fontSize: '20px', color: 'grey' }}>Brought to you by</p>
@@ -181,7 +181,7 @@ export default function Hompage() {
                         </div>
                     </div>
                     <p style={{ fontSize: '21px', color: '#666666', width: '75vw', margin: '15vh auto auto auto' }}>Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free. Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</p>
-                    <div style={{ width: '35vw', height: '17vh', margin: '10vh auto auto auto', background: 'red', color: 'white', borderRadius: '5%' }}>
+                    <div style={{ width: '35vw', height: '17vh', margin: '10vh auto auto auto', background: 'red', color: 'white', borderRadius: '5%'}}>
                         <p style={{ fontSize: '35px', fontWeight: 'bold', marginBottom: '0' }}>Join HumanityMeal Now</p>
                         <p style={{ fontSize: '17px', fontWeight: 'bold' }}>Your tasty journey begins here</p>
                     </div>

@@ -1,8 +1,9 @@
 {
     "humanityMeals":[
-        {"image":"https://www.kindmeal.my/photos/deal/7/720-5195-l.jpg","name":"Yishensu Groceries Ipoh","description":"Yishensu Groceries, Ipoh offers you a wide range of healthy, nutritious and tasty vegetarian products! We develop our own exclus.."},
-        {"image":"https://www.kindmeal.my/photos/deal/4/457-2109-l.jpg","name":"The Black Cat Cafe","description":"Western and Asian cuisine, all prepared in our humble kitchen with utmost passion and love. On Weekdays, select ANY items from .."},
-        {"image":"https://www.kindmeal.my/photos/deal/3/383-1189-l.jpg","name":"Dining Bowl","description":"Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality ingredients, in an envir.."},
-        {"image":"https://www.kindmeal.my/photos/deal/6/628-4921-l.jpg","name":"Sushi Kitchen Kota Damansara","description":"Enjoy creative, delicious and healthy fusion Japanese cuisine at Sushi Kitchen! Meticulously prepared with fresh, quality ingredi.."}
+        {"image":"https://www.kindmeal.my/photos/deal/7/720-5195-l.jpg","price":600,"name":"Yishensu Groceries Ipoh","description":"Yishensu Groceries, Ipoh offers you a wide range of healthy, nutritious and tasty vegetarian products! We develop our own exclus.."},
+        {"image":"https://www.kindmeal.my/photos/deal/4/457-2109-l.jpg","price":700,"name":"The Black Cat Cafe","description":"Western and Asian cuisine, all prepared in our humble kitchen with utmost passion and love. On Weekdays, select ANY items from .."},
+        {"image":"https://www.kindmeal.my/photos/deal/3/383-1189-l.jpg","price":900,"name":"Dining Bowl","description":"Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality ingredients, in an envir.."},
+        {"image":"https://www.kindmeal.my/photos/deal/6/628-4921-l.jpg","price":1200,"name":"Sushi Kitchen Kota Damansara","description":"Enjoy creative, delicious and healthy fusion Japanese cuisine at Sushi Kitchen! Meticulously prepared with fresh, quality ingredi.."}
     ]
 }
+
