@@ -3,11 +3,11 @@ import { AppContext } from "../context/AppContextProvider"
 import Product from "./Product";
 
 export default function MealDeals() {
-    const {data,isLogin,getData}=useContext(AppContext);
+    const {data,getData,searchMeal,onChangehandleSearch,onClickhandleSearch,sortByPrice}=useContext(AppContext);
     useEffect(() => {
        getData()
     }, [])
-    console.log(data)
+
     return (
         <div style={{ background: '#f3f3f3',textAlign:'center'}}>
             <div style={{ background: '#ebebeb' }}>
@@ -19,16 +19,20 @@ export default function MealDeals() {
                     <p style={{ textAlign: 'start' }}>Browse delicious meat-free, vegetarian deals from top restaurants and cafes! Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants. No upfront payment, booking or printing is needed. If you share it on social media, you'll even DOUBLE your discount!</p>
                     <p style={{ textAlign: 'start' }}>Download our <a href="https://apps.apple.com/app/kindmeal-my/id857891884?ls=1">mobile app</a> now to easily get coupons and start dining in a few seconds. Effortlessly save lives, health, environment and money now!</p>
                     <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', marginTop: '5vh' }}>
-                        <input type="text" placeholder="Seach Shop or Deal Name" style={{ height: '5vh', width: '20vw', fontSize: '17px' }} />
-                        <select name="category" style={{ height: '6vh', width: '13vw', fontSize: '17px' }}>
-                            <option value="Pasta">All Categories</option>
+                        <input name="name" onChange={(e)=>onChangehandleSearch(e)} type="text" placeholder="Seach Shop or Deal Name" style={{ height: '5vh', width: '20vw', fontSize: '17px' }} />
+                        <select name="category" onChange={(e)=>onChangehandleSearch(e)} style={{ height: '6vh', width: '13vw', fontSize: '17px' }}>
+                            <option >All Categories</option>
                             <option value="Burger">Burger</option>
                             <option value="Breakfast">Breakfast</option>
                             <option value="Salad">Salad</option>
                             <option value="Bakery">Bakery</option>
                             <option value="Indian">Indian</option>
                         </select>
-                        <button style={{ width: "13vw", height: '6vh', color: 'white', fontSize: '17px', fontWeight: 'bold', border: 'none', borderRadius: '5%', background: 'red' }}>Search Deals</button>
+                        <button onClick={()=>onClickhandleSearch(searchMeal)} style={{ width: "13vw", height: '6vh', color: 'white', fontSize: '17px', fontWeight: 'bold', border: 'none', borderRadius: '5%', background: 'red' }}>Search Deals</button>
+                        <div style={{display:"flex"}}>
+                        <button onClick={()=>sortByPrice('asc')} style={{height:'4vh',width:'8vw',background:'yellow'}}>Price low to high</button>
+                        <button onClick={()=>sortByPrice('desc')} style={{height:'4vh',width:'8vw',background:'lightyellow'}}>Price hight to low</button>
+                        </div>
                     </div>
                 </div>
             </div>

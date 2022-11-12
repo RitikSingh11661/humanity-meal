@@ -12,6 +12,7 @@ import { Navigate } from "react-router-dom";
 export default function PrivateRoute({ children }) {
   const { isLogin} = useContext(AppContext);
   if (!isLogin){
+    console.log("hii")
     return <Navigate to="/login" />;
   }
   return children;

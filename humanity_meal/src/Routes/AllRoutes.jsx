@@ -1,4 +1,5 @@
 import { Routes,Route } from "react-router-dom";
+import Cart from "../components/Cart";
 import HomePage from "../components/HomePage";
 import Login from "../components/Login";
 import MealDeals from "../components/MealDeals";
@@ -16,6 +17,7 @@ export default function AllRoutes(){
             <Route path="/Articles" element={<h1>Articles</h1>}/>
             <Route path="/Help" element={<h1>Help</h1>}/>
             <Route path="/login" element={<Login/>}/>
+            <Route path='/cart' element={<Cart/>}></Route>
         </Routes>
     )
 }
