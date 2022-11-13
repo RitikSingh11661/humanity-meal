@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div style={{ background: "#2bb673",paddingTop: '3vh' }}>
+        <div style={{ background: "#2bb673",paddingTop: '3vh',textAlign:'center'}}>
             <table style={{ color: 'white', marginBottom: '10vh', margin: 'auto' }}>
                 <thead>
                 <tr style={{ color: '#ffffff', fontSize: '18px' }}>
@@ -47,7 +47,7 @@ export default function Footer() {
                 </tbody>
             </table>
             <div>
-                <p style={{ color: 'white', marginTop: '5vh' }}>Copyright © HumanityMeal.my, 2014 - 2022. All rights reserved.</p>
+                <p style={{ color: 'white', marginTop: '5vh' }}>Copyright &copy; HumanityMeal.my, 2014 - 2022. All rights reserved.</p>
                 <p style={{ color: 'white', marginTop: '-2vh' }}>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
             </div>
         </div>

@@ -1,9 +1,11 @@
 import { Routes,Route } from "react-router-dom";
 import Cart from "../components/Cart";
 import HomePage from "../components/HomePage";
+import Signup from "../components/Signup";
 import Login from "../components/Login";
 import MealDeals from "../components/MealDeals";
 import PrivateRoute from "../components/PrivateRoute";
+import Admin from "../components/Admin";
 
 export default function AllRoutes(){
     return(
@@ -17,7 +19,9 @@ export default function AllRoutes(){
             <Route path="/Articles" element={<h1>Articles</h1>}/>
             <Route path="/Help" element={<h1>Help</h1>}/>
             <Route path="/login" element={<Login/>}/>
+            <Route path="/signup" element={<Signup/>}/>
             <Route path='/cart' element={<Cart/>}></Route>
+            <Route path="/admin" element={<Admin/>}></Route>
         </Routes>
     )
 }

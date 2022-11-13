@@ -2,8 +2,8 @@ import { useContext,useEffect} from "react"
 import { AppContext } from "../context/AppContextProvider"
 import Product from "./Product";
 
-export default function MealDeals() {
-    const {data,getData,searchMeal,onChangehandleSearch,onClickhandleSearch,sortByPrice}=useContext(AppContext);
+export default function Admin() {
+    const {data,getData,searchMeal,onChangehandleSearch,onClickhandleSearch,sortByPrice,newMeal,newMealhandler,addNewMeal}=useContext(AppContext);
     useEffect(() => {
        getData()
     }, [])
@@ -27,12 +27,30 @@ export default function MealDeals() {
                             <option value="Salad">Salad</option>
                             <option value="Bakery">Bakery</option>
                             <option value="Indian">Indian</option>
+                            <option value="Chinees">Chinees</option>
                         </select>
                         <button onClick={()=>onClickhandleSearch(searchMeal)} style={{ width: "13vw", height: '6vh', color: 'white', fontSize: '17px', fontWeight: 'bold', border: 'none', borderRadius: '5%', background: 'red' }}>Search Deals</button>
                         <div style={{display:"flex"}}>
                         <button onClick={()=>sortByPrice('asc')} style={{height:'4vh',width:'8vw',background:'yellow'}}>Price low to high</button>
                         <button onClick={()=>sortByPrice('desc')} style={{height:'4vh',width:'8vw',background:'lightyellow'}}>Price hight to low</button>
                         </div>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', marginTop: '5vh' }}>
+                        <label style={{fontSize:'20px'}}>Add Meal : </label>
+                        <input name="name" onChange={(e)=>newMealhandler(e)} type="text" placeholder="Meal Name" style={{ height: '5vh', width: '10vw', fontSize: '17px' }} />
+                        <input name="description" onChange={(e)=>newMealhandler(e)} type="text" placeholder="Description" style={{ height: '5vh', width: '10vw', fontSize: '17px' }} />
+                        <input name="price" onChange={(e)=>newMealhandler(e)} type="text" placeholder="Price" style={{ height: '5vh', width: '10vw', fontSize: '17px' }} />
+                        <input type="url" name="image" onChange={(e)=>newMealhandler(e)} placeholder="Image link" style={{ height: '5vh', width: '10vw', fontSize: '17px' }}/>
+                        <select name="category" onChange={(e)=>newMealhandler(e)} style={{ height: '6vh', width: '10vw', fontSize: '17px' }}>
+                            <option >All Categories</option>
+                            <option value="Burger">Burger</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Salad">Salad</option>
+                            <option value="Bakery">Bakery</option>
+                            <option value="Indian">Indian</option>
+                            <option value="Chinees">Chinees</option>
+                        </select>
+                        <button onClick={addNewMeal} style={{background:'green',cursor:'pointer',fontWeight:'bold',height: '5vh', width: '10vw', fontSize: '17px' }}>Add Meal</button>
                     </div>
                 </div>
             </div>
@@ -41,7 +59,7 @@ export default function MealDeals() {
             </div>
             <div id="meal-deals" style={{width: '81vw',margin: 'auto' }}>
                 <div style={{display:"grid",gridTemplateColumns:'repeat(2,37vw)',gap:'4vw'}}>
-                   {data.map(item=><Product key={item.name+item.price} name={item.name} image={item.image} description={item.description} price={item.price}/>)}
+                   {data.map(item=><Product key={item.description} name={item.name} image={item.image} description={item.description} price={item.price}/>)}
                 </div>
             </div>
             <div style={{ background: '#f3f3f3', marginTop: '15vh' }}>

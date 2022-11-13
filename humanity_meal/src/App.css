@@ -6,20 +6,33 @@
   height: 40vmin;
   pointer-events: none;
 }
-th{
+
+th {
   padding: 15px;
 }
-td{
+
+td {
   padding: 1vh;
 }
 
-.nav>a{
+.nav>a {
   color: #ffffff;
   text-decoration: none;
 }
 
-button:hover{
+.checkout>a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button:hover {
   color: grey;
+}
+
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -47,6 +60,7 @@ button:hover{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

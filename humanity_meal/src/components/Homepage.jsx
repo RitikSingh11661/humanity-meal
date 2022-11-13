@@ -12,7 +12,7 @@ export default function HomePage() {
                     <img width={'70%'} height={'406px'} src="https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg" alt="daal" />
                     <img width={'30%'} height={'406px'} src="https://www.kindmeal.my/photos/shop/5/570-4268-m.jpg" alt="food" />
                 </div>
-                <div style={{ width: '81vw', margin: 'auto', background: 'white', display: 'flex', justifyContent: 'space-evenly', background: 'white', height: '25vh', alignItems: 'center', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
+                <div style={{ width: '81vw', margin: 'auto', background: 'white', display: 'flex', justifyContent: 'space-evenly',height: '25vh', alignItems: 'center', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/687-4507-m.jpg" alt="food" />
                     <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg" alt="food" />
                     <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg" alt="food" />
