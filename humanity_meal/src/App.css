@@ -29,6 +29,41 @@ button:hover {
   color: grey;
 }
 
+#top_div{
+  width: 81vw;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+}
+#img1{
+  width: 70%;
+  height: 406px;
+}
+#img2{
+  width: 30%;
+  height: 406px;
+}
+.image_div{
+     width: 81vw;
+     margin: auto;
+     background: white;
+     display: flex;
+     justify-content: space-evenly;
+     height: 25vh;
+     box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+     padding-top: 3vh;
+}
+.image_div>img{
+     width: 12%;
+     height: 75%;
+}
+.links{
+  width: 50%;
+  display:flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  color: blue;
+  font-size: 23px;
+}
 @media (min-width: 1025px) {
   .h-custom {
     height: 100vh !important;

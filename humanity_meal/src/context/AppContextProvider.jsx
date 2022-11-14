@@ -47,6 +47,7 @@ export default function AppContextProvider({ children }) {
     // here I am adding products into cart
     const handleCart = (meal) => {
         setCart([...cart, meal])
+        alert(`Hey ${meal.name} is added into your basket`)
     }
     const deleteMealById = (price) => {
         let new_cart = cart.filter((el) => {
@@ -95,6 +96,7 @@ export default function AppContextProvider({ children }) {
             }
         })
         res=await res.json();
+       console.log(userLoginDetails)
         if(res.error){
             alert('Kindly Check your Username or Password, Its incorect')
         }else{
@@ -123,6 +125,7 @@ export default function AppContextProvider({ children }) {
         ;
     }
     const addNewMeal=()=>{
+        alert('New Meal has added')
         return axios.post(api,newMeal);
     }
     const deleteMeal=async(description)=>{
