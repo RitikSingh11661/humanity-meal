@@ -65,14 +65,6 @@
       "category": "Indian",
       "price": 20,
       "id": 9
-    },
-    {
-      "name": "Jalebi",
-      "description": "Indian Sweet",
-      "image": "https://recipes.timesofindia.com/thumb/msid-53099699,width-1600,height-900/53099699.jpg",
-      "category": "Indian",
-      "price": 34,
-      "id": 10
     }
   ]
 }

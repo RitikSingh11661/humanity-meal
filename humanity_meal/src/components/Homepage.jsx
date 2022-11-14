@@ -1,25 +1,21 @@
 export default function HomePage() {
     // https://www.kindmeal.my/images/deal-feature-vignette.png
     // https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg , https://www.kindmeal.my/photos/shop/5/593-4434-m.jpg
-
-    const imageStyle = {
-        width: '10%'
-    }
     return (
         <div>
             <div style={{ marginBottom: '10', background: '#f3f3f3', paddingBottom: '10vh' }}>
-                <div style={{ width: '81vw', margin: 'auto', display: 'flex', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
-                    <img width={'70%'} height={'406px'} src="https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg" alt="daal" />
-                    <img width={'30%'} height={'406px'} src="https://www.kindmeal.my/photos/shop/5/570-4268-m.jpg" alt="food" />
+                <div id="top_div">
+                    <img id="img1" src="https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg" alt="daal" />
+                    <img  id="img2" src="https://www.kindmeal.my/photos/shop/5/570-4268-m.jpg" alt="food" />
                 </div>
-                <div style={{ width: '81vw', margin: 'auto', background: 'white', display: 'flex', justifyContent: 'space-evenly',height: '25vh', alignItems: 'center', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/687-4507-m.jpg" alt="food" />
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg" alt="food" />
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg" alt="food" />
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/1/177-1118-m.jpg" alt="food" />
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/686-4475-m.jpg" alt="food" />
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg" alt="food" />
-                    <img width={'12%'} height='75%' src="https://www.kindmeal.my/photos/deal/7/716-5042-m.jpg" alt="food" />
+                <div className="image_div">
+                    <img src="https://www.kindmeal.my/photos/deal/6/687-4507-m.jpg" alt="food" />
+                    <img src="https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg" alt="food" />
+                    <img src="https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg" alt="food" />
+                    <img src="https://www.kindmeal.my/photos/deal/1/177-1118-m.jpg" alt="food" />
+                    <img src="https://www.kindmeal.my/photos/deal/6/686-4475-m.jpg" alt="food" />
+                    <img src="https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg" alt="food" />
+                    <img src="https://www.kindmeal.my/photos/deal/7/716-5042-m.jpg" alt="food" />
                 </div>
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center', boxSizing: 'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
@@ -30,22 +26,22 @@ export default function HomePage() {
                             <p>Follow Our Facebook</p>
                         </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between',fontSize: '12px' }}>
                         <div style={{ width: '14vw', lineGap: '1vh' }}>
-                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-sin6-2.xx.fbcdn.net/v/t15.5256-10/298969854_601112454850438_5265806124209675410_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=WZDVFJjewEIAX9CbLYZ&_nc_ht=scontent-sin6-2.xx&edm=ALdPpPkEAAAA&oh=00_AfCPhVbU372ZTI_eG36g5PH099gSzR2kNc5vIoaCU2uIsg&oe=6370D918" alt="" />
+                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/295053695_3201368470133939_3375103733365577005_n.jpg?stp=dst-jpg_s720x720&_nc_cat=105&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RUT4fvsMUkoAX_Jhj-I&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfAX-FFQlaoI2sf2nfoKmmrP8XsIuggaVVmlKgUUKRHaWA&oe=6377523E" alt="" />
+                            <p>Big Or Small; Furred, Feathered Or Finned Every Life Is Prec..</p>
+                        </div>
+                        <div style={{ width: '14vw', lineGap: '1vh' }}>
+                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/76771976_523016821685086_154715867442053120_n.jpg?stp=dst-jpg_p720x720&_nc_cat=102&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=iF9U1CSNgfAAX_wZU_E&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfBmGlsE9u-fLktnZdhWEy0HbchL31cyLZ26qcxOqmkwKg&oe=637652BB" alt="" />
+                            <p>Fuzzy Baby Otter Grows Up And Swims Back To The Wild</p>
+                        </div>
+                        <div style={{ width: '14vw', lineGap: '1vh' }}>
+                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/298969854_601112454850438_5265806124209675410_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RufzzY1xYkIAX9x4xkK&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfAeWG0tl0ycbgtd6aE_qGKCgfSxrNNDH4kSBi9SeTcOrQ&oe=6376C7D8" alt="" />
                             <p>Mama And Baby Elephant Get Stuck In 7 Foot Hole</p>
                         </div>
                         <div style={{ width: '14vw', lineGap: '1vh' }}>
-                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-sin6-4.xx.fbcdn.net/v/t15.5256-10/271582707_265022372394889_56974782009965446_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=AvnOZmUGPm4AX9yLKFO&_nc_ht=scontent-sin6-4.xx&edm=ALdPpPkEAAAA&oh=00_AfAztj_7rPeAb9ufMMKe0S4n-Y7tOXrT4TMqEUunQbwiCg&oe=6370EA63" alt="" />
+                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/271582707_265022372394889_56974782009965446_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=GNwvbmWwssMAX-01sIi&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfDZKQ-2SKgwoNKogj1w04XVpg5vHzIthykMwhUmkTZj6g&oe=6376D923" alt="" />
                             <p>Watch These White Fluffy Babies Turn Into The Most Gorgeous ..</p>
-                        </div>
-                        <div style={{ width: '14vw', lineGap: '1vh' }}>
-                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-sin6-3.xx.fbcdn.net/v/t15.5256-10/117878469_336434917736037_3866333495709289709_n.jpg?stp=dst-jpg_s720x720&_nc_cat=106&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=LJ4Mzxi0yckAX9Yttmo&_nc_ht=scontent-sin6-3.xx&edm=ALdPpPkEAAAA&oh=00_AfALAyKq-byoZRN9Umz3kmnw9y_L0nxRhfeNOHaoTL7OMg&oe=63721345" alt="" />
-                            <p>Goulash & Dumplings From Speedy Bosh!</p>
-                        </div>
-                        <div style={{ width: '14vw', lineGap: '1vh' }}>
-                            <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-sin6-4.xx.fbcdn.net/v/t15.5256-10/289716764_300414298892410_2889986081793667301_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RwwitqaIrFQAX8XdIRZ&_nc_ht=scontent-sin6-4.xx&edm=ALdPpPkEAAAA&oh=00_AfC99hkji_eJ-jZ4q1Bx_ogMD2GOeBpDB6UtfEzDxoT2hQ&oe=6370DF70" alt="" />
-                            <p>Best Friends At Off The Plate Sanctuary</p>
                         </div>
                         <div style={{ width: '14vw', lineGap: '1vh' }}>
                             <img style={{ width: '14vw', height: '32vh', borderRadius: '3%' }} className="imageStlye" src="https://scontent-sin6-3.xx.fbcdn.net/v/t15.5256-10/291422646_573014587525199_3892685742425568101_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=pshf3n2STnkAX-cNyKG&_nc_ht=scontent-sin6-3.xx&edm=ALdPpPkEAAAA&oh=00_AfCc8oBZn6JwfRV4qwNYreGvJkO7rWBCGQ8c5wml7zl6RQ&oe=637219FF" alt="" />
@@ -56,7 +52,7 @@ export default function HomePage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center', boxSizing: 'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{ color: '#666666' }}>Yummylicious Moments</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div className="links">
                             <p>Secret Recipes</p>
                             <p>Member Hot Picks</p>
                             <p>Photo Moments</p>
@@ -88,7 +84,7 @@ export default function HomePage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center', boxSizing: 'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{ color: '#666666' }}>Discover Restaurants</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div className="links">
                             <p>Vegetarian Directory</p>
                             <p>Restaurant Menu</p>
                             <p>Food Map</p>
@@ -120,7 +116,7 @@ export default function HomePage() {
                 <div style={{ width: '81vw', margin: 'auto', background: 'white', marginTop: '7vh', alignItems: 'center', boxSizing: 'border-box', padding: '0 2vw', boxShadow: 'rgba(0, 0, 0, 0.16)0px 1px 4px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '7vh', alignItems: 'center' }}>
                         <h2 style={{ color: '#666666' }}>Amazing Superheroes</h2>
-                        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', color: 'blue', fontSize: '23px' }}>
+                        <div className="links">
                             <p>Latest Buzz</p>
                             <p>Lifestyle</p>
                             <p>Animals Heros</p>

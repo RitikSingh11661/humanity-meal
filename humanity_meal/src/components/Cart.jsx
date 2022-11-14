@@ -1,6 +1,6 @@
 import { MDBBtn,MDBCard,MDBCardBody,MDBCardImage,MDBCol,MDBContainer,MDBIcon,MDBInput,MDBRow,MDBTypography} from "mdb-react-ui-kit";
 import React from "react";
-import { DeleteIcon, ArrowForwardIcon } from '@chakra-ui/icons'
+import { DeleteIcon, ArrowForwardIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { AppContext } from "../context/AppContextProvider";
 import { useContext } from "react";
 import { useRef} from "react";
@@ -8,8 +8,6 @@ import { useRef} from "react";
 export default function Cart() {
     const { cart,deleteMealById} = useContext(AppContext)
     const priceRef=useRef({totalPrice:0})
-  console.log(' ',)
-    
     const order=()=>{
       console.log(' ', 'ordering')
         setTimeout(()=>{
@@ -98,21 +96,21 @@ export default function Cart() {
 
                                                 <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', width: '90%' }}>
                                                     <p className="mb-2">Subtotal</p>
-                                                    <p className="mb-2">₹{priceRef.currenttotalPrice}</p>
+                                                    <p className="mb-2">₹{cart.length>0?priceRef.current.totalPrice:0}</p>
                                                 </div>
 
                                                 <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', width: '90%' }}>
                                                     <p className="mb-2">Shipping</p>
-                                                    <p className="mb-2">₹50.00</p>
+                                                    <p className="mb-2">₹{cart.length>0?50:0}</p>
                                                 </div>
 
                                                 <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', width: '90%' }}>
                                                     <p className="mb-2">Total(Incl. taxes)</p>
-                                                    <p className="mb-2">₹{priceRef.current.totalPrice+50}</p>
+                                                    <p className="mb-2">₹{cart.length>0?priceRef.current.totalPrice+50:0}</p>
                                                 </div>
                                                 <MDBBtn onClick={()=>order()} className="checkout" color="info" block size="lg" style={{width: '95%', height: '5vh', border: 'none', padding: '0 1vw', background: '#39c0ed', color: "white", fontSize: '17px', fontWeight: 'bold',cursor:'pointer' }}>
                                                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                            <span>₹{priceRef.current.totalPrice+50+18}</span>
+                                                            <span>₹{cart.length>0?priceRef.current.totalPrice+50+18:0}</span>
                                                             <span>
                                                                 Checkout{" "}
                                                                 <i className="fas fa-long-arrow-alt-right ms-2"></i>
